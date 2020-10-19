@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background: url('../pics/backWall.jpg') fixed;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background: url('../pics/KamosBanner1000.bmp.png');
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    padding: 3% 10% 10% 10%;
+    text-shadow: 0 0 10px rgba(3, 66, 24, .5);
+}
+
+.wrapper {
+    max-width: 1000px ;
+    margin: 0px auto;
+}
+.content {
+    background-color: rgba(255, 0, 0, 0.001);
+}
+.content::after,
+footer::after, 
+#p1::after,
+#img1 {
+    content: "";
+    clear: both;
+    display: table;
+}
+nav {
+    width: 25%;
+    background-color: rgba(255, 255, 255, .2);
+    float: left;
+}
+nav ul {
+    margin: 0px;
+    padding: 30px;
+    list-style: none;
+}
+nav ul li {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+
+}
+nav a {
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+}
+nav a:hover {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, .3);
+}
+main {
+    width: 75%;
+    background: rgba(255, 255, 255, .2);
+    float: left;
+    padding: 30px;
+}
+main p {
+line-height: 23px;
+}
+.floatleft {
+    float: left;
+    margin: 0 15px 0 0;
+}
+.floatright {
+    float: right;
+    margin-right: 15px;
+}
+#img1 {
+    width: 25%;
+}
+#Born {
+    width: 100%;  
+}
+
+footer {
+    margin: 20px;
+    width: 95%;
+}
+
+footer a {
+    color: white;
+}
+
+footer .left {
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+footer .right {
+    float: right;
+    margin: 0 10px 0 0;
+}

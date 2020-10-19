@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url(../pics/wallRose.jpg) fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+.wrapper {
+    max-width: 1200px ;
+    margin: 40px auto;
+}
+/* Float esetén
+.menu::after {
+    content: "";
+    clear: both;
+    display: table;
+}*/
+header {
+    font-family:  'Lobster Two', cursive;
+    text-align: center;
+    color: seagreen;
+    font-size: 50px;
+    border-top: 2px dashed rgba(255, 255, 255, .5);
+    border-bottom: 2px dashed rgba(255, 255, 255, .5);
+    padding: 20px 0;
+    margin: 40px 0;
+    background: rgba(46, 139, 87, .3);
+}
+.content {
+    display: flex;
+    flex-direction: row; /*alapértelmezett így*/
+    flex-wrap: nowrap;  /*alapértelmezett így*/
+    justify-content: space-evenly;
+    align-items: stretch; /*alapértelmezett így*/
+    align-content: stretch; /*alapértelmezett így*/
+}
+
+img {
+    width: 35%;
+}
+nav {
+    background: rgba(46, 139, 87, .5);
+    flex-basis: 18vw; /* Ua mint: width: ;*/
+    margin-top: 10px;
+}
+nav ul {
+    padding: 2vw;
+    margin: 0;
+    list-style: none;
+}
+nav li {
+    border-bottom: rgb(135, 206, 235) dashed 2px;
+}
+nav li a {
+    text-decoration: none;
+    color: rgb(135, 206, 235);
+    display: block;
+    padding: 1vw;
+    font-size: 2.5vw;
+}
+nav li a:hover {
+    background: rgba(53, 24, 100, .5);
+}
+main {
+    flex-basis: 64vw; /* Ua mint: width: ;*/
+}
+/*.members {
+    display: flex;
+    flex-wrap: wrap;    Flex box gyakorlás
+}*/
+.memberBox {
+    /*flex: 1;
+    min-width: 200px;    Flex box gyakorlás*/
+    border: orange solid 1px;
+    background: rgba(255, 165, 0, .3);
+    padding: 10px;
+    margin: 10px;
+    color: orangered;
+    text-align: justify;
+    font-size: 2vw;
+}
+aside {
+    flex-basis: 18vw; /* Ua mint: width: ;*/
+    background: rgba(0, 0, 205, .3);
+    margin-top: 10px;
+}
+aside h3 {
+    text-align: center;
+    font-size: 1.8vw;
+}
+aside ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+aside li {
+    list-style: none;
+    padding: 1vw;
+}
+aside a {
+    display: block;   
+}
+#turul,
+#huszar {
+    width: 16vw;
+}
+#turul:hover,
+#huszar:hover {
+    width: 16vw;
+    box-shadow: rgb(25, 25, 112) 0 0 20px;
+}
+/* Még be kell állítani a responsive elemnek a menüt!!!*/
